@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/editdance"
+                android:gravity="center"
+                android:textSize="@dimen/sp_9" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"></TextView>
+
+            <Button
+                android:id="@+id/senddance"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/dancesend"
+                android:textSize="@dimen/sp_9" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"></TextView>
+
+            <Button
+                android:id="@+id/managerback"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/back"
+                android:textSize="@dimen/sp_9"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp">
+
+            <EditText
+                android:id="@+id/monitorID"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:hint="@string/start_team_0"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="@dimen/sp_9" />
+
+            <EditText
+                android:id="@+id/monitorIDend"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:hint="@string/end_team"
+                android:inputType="number"
+                android:maxLength="3"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp_9" />
+
+            <EditText
+                android:id="@+id/sleeptime"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:hint="@string/set_delay_time"
+                android:inputType="number"
+                android:maxLength="7"
+                android:textSize="@dimen/sp_9" />
+
+            <Spinner
+                android:id="@+id/monitorTypeSpinner"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/sp_9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/monitoradd"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textSize="@dimen/sp_9" />
+
+            <Button
+                android:id="@+id/monitorupdate"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/xiugai"
+                android:textSize="@dimen/sp_9" />
+
+            <Button
+                android:id="@+id/monitordelete"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/delete_all"
+                android:textSize="@dimen/sp_9" />
+
+            <Button
+                android:id="@+id/monitorsave"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textSize="@dimen/sp_9"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/set_team_id"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/delay_time"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/dance_name"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/monitorlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:paddingLeft="16dp"
+            android:paddingRight="@dimen/sp_8"></ListView>
+    </LinearLayout>
+
+</AbsoluteLayout>

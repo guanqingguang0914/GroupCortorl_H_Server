@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dip">
+
+
+    <TextView
+        android:id="@+id/gid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#ff6348"
+        android:textSize="@dimen/sp_9"></TextView>
+    <TextView
+        android:id="@+id/style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:textColor="#ff6348"
+        android:textSize="@dimen/sp_9"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#ff6348"
+        android:textSize="@dimen/sp_9"></TextView>
+
+    <TextView
+        android:id="@+id/binfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="#ff6348"
+        android:textSize="@dimen/sp_9"></TextView>
+
+    <Button
+        android:id="@+id/delet"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="3sp"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/sp_9"></Button>
+
+</LinearLayout>

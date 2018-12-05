@@ -1,0 +1,348 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/model"
+            android:text="设 置"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="13"></LinearLayout>
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/model"
+            android:text="帮 助"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55">
+
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.4"
+        android:src="@drawable/countdown0" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        >
+        <ImageView
+            android:id="@+id/timetext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/countdown0"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/H0"
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="H0"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:background="@drawable/typeselect"
+            />
+        <Button
+            android:id="@+id/H3"
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@+id/H0"
+            android:layout_marginLeft="100dp"
+            android:layout_centerVertical="true"
+            android:text="H3"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="@drawable/typeselect"
+            />
+        <Button
+            android:id="@+id/H5"
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="H5"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:background="@drawable/typeselect"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.26"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:orientation="horizontal">
+            <!--空白处写两个button-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="32.2"
+            android:orientation="horizontal"
+            >
+            <!--<Button-->
+                <!--android:id="@+id/H0"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="35dp"-->
+                <!--android:text="H0"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="25sp"-->
+                <!--/>-->
+
+           <!-- <Button
+                android:id="@+id/H3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="H3"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                />
+            <Button
+                android:id="@+id/H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="H5"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                />-->
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="12"
+            android:src="@drawable/image" />
+
+        <Button
+            android:id="@+id/btn_choisebin"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="26"
+            android:background="@drawable/model"
+            android:text="动作选择"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="12"
+            android:src="@drawable/image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="32.8">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.32"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.82"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.6"></LinearLayout>
+
+        <Button
+            android:id="@+id/volume"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="声音控制"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"></LinearLayout>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="停止动作"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"></LinearLayout>
+
+        <Button
+            android:id="@+id/showframe"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="显示帧数"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"></LinearLayout>
+
+        <Button
+            android:id="@+id/batterylevel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="检测电量"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.43"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.82"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.6"></LinearLayout>
+
+        <Button
+            android:id="@+id/release"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="释 放"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"></LinearLayout>
+
+        <Button
+            android:id="@+id/fixed"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="固 定"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"></LinearLayout>
+
+        <Button
+            android:id="@+id/initial"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="归 零"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"></LinearLayout>
+
+        <Button
+            android:id="@+id/sendbroad"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:background="@drawable/bg_btn"
+            android:text="动作发送"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.0"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"></LinearLayout>
+
+</LinearLayout>

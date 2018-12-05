@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <FrameLayout
+        android:id="@+id/rl_update_version"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_update_version"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/x758"
+                android:layout_height="@dimen/y901"
+                android:background="@drawable/update_lib_update_version_bg" >
+
+                <!-- 发现新版本 -->
+
+
+                <!-- 更新按钮 -->
+                <RelativeLayout
+                    android:id="@+id/rl_update_btn"
+                    android:layout_width="@dimen/x660"
+                    android:layout_height="@dimen/x100"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/y42">
+                    <TextView
+                        android:id="@+id/tv_update_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/update_lib_update_version_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/update_lib_update_positive"
+                        android:textColor="@color/update_lib_white"
+                        android:textSize="@dimen/x42"
+                        android:visibility="gone"/>
+                    <!--强制更新按钮-->
+                    <RelativeLayout
+                        android:id="@+id/ll_update_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/tv_exit"
+                            android:layout_width="@dimen/x280"
+                            android:layout_height="@dimen/y100"
+                            android:background="@drawable/update_lib_update_version_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/update_lib_update_cancel"
+                            android:textColor="@color/update_lib_white"
+                            android:textSize="@dimen/x42"/>
+                        <TextView
+                            android:id="@+id/tv_force_update"
+                            android:layout_width="@dimen/x280"
+                            android:layout_height="@dimen/y100"
+                            android:layout_toRightOf="@id/tv_exit"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:background="@drawable/update_lib_update_version_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/update_dialog_sure"
+                            android:textColor="@color/update_lib_white"
+                            android:textSize="@dimen/x42"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="@dimen/x450"
+                    android:layout_height="@dimen/y350"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/x100"
+                    android:gravity="center"
+                    android:text="@string/update_lib_update_title"
+                    android:textColor="@color/update_lib_white"
+                    android:textSize="@dimen/x80"
+                    android:textStyle="bold" />
+
+                <!-- 更新内容 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_update_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/rl_update_btn"
+                    android:layout_below="@id/tv_title"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/y35"
+                    android:paddingRight="@dimen/y35" >
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/update_lib_update_version_content"
+                        android:textSize="@dimen/x45"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 取消更新 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y42" >
+
+                <ImageView
+                    android:id="@+id/tv_cancel_show"
+                    android:layout_width="@dimen/x84"
+                    android:layout_height="@dimen/y84"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/update_lib_update_version_btn_cancel" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

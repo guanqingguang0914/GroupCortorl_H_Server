@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="update_lib_white">#ffffff</color>
+    <color name="update_lib_update_version_content">#2d2d2d</color>
+    <color name="update_lib_black">#000000</color>
+    <color name="update_lib_black2">#333333</color>
+    <color name="update_lib_translucent_background">#60000000</color>
+    <color name="update_lib_text_color">#838B8B</color>
+    <color name="update_lib_download_text">#548B54</color>
+    <color name="update_lib_red_color">#ff5454</color>
+    <color name="update_lib_green">#66c600</color>
+    <color name="update_lib_ececec">#ececec</color>
+    <color name="update_lib_zhezhao">#3f000000</color>
+    <color name="update_lib_bbbff">#3bbbff</color>
+    <color name="update_lib_bdbdbd">#bdbdbd</color>
+
+    <color name="update_lib_toolbar_text_color_normal">#CFCFCF</color>
+    <color name="update_lib_toolbar_text_color_select">#EE9A49</color>
+    <color name="update_lib_main_color">#d8d8d8</color>
+    <color name="update_lib__00e0e9ff">#00e0e9ff</color>
+    <color name="update_lib__1ee0e9ff">#1ee0e9ff</color>
+    <color name="update_lib_gray">#999999</color>
+    <color name="update_lib_bcbcbc">#bcbcbc</color>
+    <color name="update_lib_blues">#4f63a8</color>
+    <color name="update_lib_bawu">#858585</color>
+    <color name="update_lib_dialog_title_text_col">#333333</color>
+    <color name="update_lib_dialog_message_txt_col">#858585</color>
+    <color name="update_lib_dialog_btn_txt_col">#006bc6</color>
+    <color name="black2">#333333</color>
+    <color name="bawu">#858585</color>
+    <color name="dialog_btn_txt_col">#006bc6</color>
+
+</resources>

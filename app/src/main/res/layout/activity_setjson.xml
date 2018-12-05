@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingRight="10dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:text="剧情编排"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12" />
+            <Button
+                android:id="@+id/set_role"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:text="角色设置"
+                android:textSize="@dimen/sp_9"/>
+            <Button
+                android:id="@+id/file_send"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:text="发送文件"
+                android:textSize="@dimen/sp_9"></Button>
+            <Button
+                android:id="@+id/action_play"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:text="选择执行JSON"
+                android:textSize="@dimen/sp_9"/>
+
+
+            <Button
+                android:id="@+id/json_back"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:text="打开JSON"
+                android:textSize="@dimen/sp_9"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp">
+
+            <EditText
+                android:id="@+id/action_role"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:hint="角色"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="@dimen/sp_9" />
+
+            <Spinner
+                android:id="@+id/action_style"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:entries="@array/action_style"
+                android:gravity="center"
+
+                android:textSize="@dimen/sp_9" />
+
+            <EditText
+                android:id="@+id/action_time"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:hint="开始时间"
+                android:inputType="number"
+                android:maxLength="7"
+                android:textSize="@dimen/sp_9" />
+
+            <Spinner
+                android:id="@+id/action_name"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/sp_9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/action_add"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textSize="@dimen/sp_9" />
+            <Button
+                android:id="@+id/action_updata"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="修改"
+                android:textSize="@dimen/sp_9" />
+
+
+            <Button
+                android:id="@+id/action_delall"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/delete_all"
+                android:textSize="@dimen/sp_9" />
+            <Button
+                android:id="@+id/action_creatjson"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="生成JSON"
+                android:textSize="@dimen/sp_9" />
+
+            <Button
+                android:id="@+id/action_sendjson"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="发送JSON"
+                android:textSize="@dimen/sp_9"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="角色"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="类型"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="开始时间"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="行为"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_9" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/action_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:paddingLeft="16dp"
+            android:paddingRight="@dimen/sp_8"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

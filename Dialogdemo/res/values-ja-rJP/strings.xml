@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="update_lib_app_name">UpdateDemo</string>
+
+    <string name="update_lib_update_title">最新のバージョンが見つかりました</string>
+    <string name="update_lib_update_positive">アップデートする</string>
+    <string name="update_lib_down_ing">ロード中...</string>
+
+    <string name="update_lib_update_cancel">exit</string>
+    <string name="update_dialog_sure">Yes</string>
+    <string name="update_dialog_cancel">No</string>
+    <string name="update_text">New STM32 firmware is detected, update now?</string>
+</resources>
